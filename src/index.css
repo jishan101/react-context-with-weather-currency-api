@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+body {
+    background: url("../public/background.jpg");
+    background-size: cover;
+}
+
+/* for mobile menu trasition */
+/* .menu-bars {
+    cursor: pointer;
+}
+
+.menu-bars>.bars>span:first-child {
+    transform: scaleX(1);
+    transition: transform 300ms cubic-bezier(.64, .22, .36, .78) 700ms;
+}
+
+.menu-bars.is-open>.bars>span:first-child {
+    transform: scaleX(0);
+    transition: transform 300ms cubic-bezier(.64, .22, .36, .78);
+}
+
+.menu-bars>.bars>span:nth-child(3) {
+    width: 17px;
+    transition: width 300ms cubic-bezier(.64, .22, .36, .78) 700ms;
+}
+
+.menu-bars.is-open>.bars>span:nth-child(3) {
+    width: 0;
+    transition: width 300ms cubic-bezier(.64, .22, .36, .78);
+}
+
+.menu-bars>.bars>span:nth-child(2) {
+    transform: rotateZ(0deg);
+    transition: transform 300ms cubic-bezier(.64, .22, .36, .78);
+}
+
+.menu-bars.is-open>.bars>span:nth-child(2) {
+    transform: rotateZ(315deg);
+    transition: transform 300ms cubic-bezier(.64, .22, .36, .78) 700ms;
+}
+
+.menu-bars>.other-bar {
+    height: 0;
+    transform: rotateZ(0deg);
+    transition: height 300ms cubic-bezier(.64, .22, .36, .78) 400ms, transform 300ms cubic-bezier(.64, .22, .36, .78);
+}
+
+.menu-bars.is-open>.other-bar {
+    height: 30px;
+    transform: rotateZ(315deg);
+    transition: height 300ms cubic-bezier(.64, .22, .36, .78) 300ms, transform 300ms cubic-bezier(.64, .22, .36, .78) 700ms;
+}
+
+.menu-mobile {
+    transform: translateX(100vw);
+    transition: all 550ms cubic-bezier(.64, .22, .14, .87);
+}
+
+.menu-mobile.is-open {
+    transform: translateX(0vw);
+    transition: all 550ms cubic-bezier(.64, .22, .14, .87);
+}
+
+.mobile-links {
+    -moz-box-shadow: -20px 0px 20px -15px rgba(2, 12, 27, 0.7);
+    -webkit-box-shadow: -20px 0px 20px -15px rgba(2, 12, 27, 0.7);
+    box-shadow: -20px 0px 20px -15px rgba(2, 12, 27, 0.7);
+} */
+
+/* mobile menu trasition end */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* for social media icons transition */
+.social-animation {
+    @apply transition duration-1000 ease-in-out hover:-translate-y-2 hover:scale-125 hover:stroke-2 hover:transition hover:duration-1000 hover:ease-in-out;
+}
+
